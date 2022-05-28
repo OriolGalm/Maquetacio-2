@@ -12,14 +12,16 @@
     <nav class="navbar d-flex-row mt-4">
         <div class="container">
             <img class="justify-content-start" src="recursos/Imagenes_logo-bookmark.svg">          
-            <div class="d-flex navElements">
+            <div class="d-flex navElements" id="navElm">
                 <div>features</div>
                 <div>pricing</div>
                 <div>contact</div>
                 <button type="button" class="btn btn-danger px-4 py-1">login</button>
             </div>
         </div>
+        <img class="hamb" onclick="menu()" src="recursos/Imagenes_icon-hamburger.svg">
     </nav>
+
     <header class="container d-flex mt-5 pt-4">
         <div class="row row-cols-1 row-cols-md-2">
             <div class="col">
@@ -27,13 +29,24 @@
                 <p>A clean and simple interface to organize your favorite websites. Open a new browser tab and 
                     see your sites load instantly. Try it for free.</p>
                 <div class="d-flex mt-4">
-                    <button class="btn btn-primary shadow-sm m-1">Get it on Chrome</button>
-                    <button class="btn btn-light shadow-sm m-1">Get it on Firefox</button>
-                </div>
-            </div>
+                    <button class="btn btn-primary shadow-sm m-1 boto">Get it on Chrome</button>
+                    <button class="btn btn-light shadow-sm m-1 boto">Get it on Firefox</button>
+                </div>           
+            </div>  
             <img class="col" src="recursos/Imagenes_illustration-hero.svg">
         </div>
     </header>  
+
+    <script>
+        function menu(){
+            let canvi = document.getElementById("navElm");
+            if(canvi.style.left === "0px"){
+                canvi.style.left = "-1400px";
+            }else{
+                canvi.style.left = "0px";
+            }
+        }
+    </script>
 
 </body>
 </html>
