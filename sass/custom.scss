@@ -26,6 +26,7 @@ $danger: #FA5959;
        position: absolute;
        top:60px;
        left: -1400px;
+       height: 230px;
        flex-direction: column;
        padding:10px;
        background: ivory;
@@ -72,5 +73,32 @@ header>div{
         button{
             width: 48%;
         }
+    }
+}
+.features{
+    h2{
+        text-transform: capitalize;
+        font-weight: bold;
+        text-align: center;
+    }
+    p{
+        color: grey;
+        text-align: center;
+    }
+}
+#myTab{
+    button{
+        border:none;
+        color:grey;
+        font-weight: bold;
+    }
+    button.active{
+        border-bottom: 3px solid $danger;
+        color:black;
+    }
+}
+.segonaPart{
+    h2{
+        font-weight: bold;
     }
 }
