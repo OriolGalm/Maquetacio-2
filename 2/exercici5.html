@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="/sass/custom.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
 </head>
 <body>
 
@@ -183,33 +183,36 @@
       <button class="btn btn-primary btn-lg">More Info</button>
     </div>
 
-    <footer class="bg-primary row row-cols-1 cols-md-8">
+    <footer class="container-fluid">
+      <div class="bg-primary row row-cols-1 cols-md-8">
         <h6 class="mt-5">35,000+ already joined</h6>
         <h3 class="">Stay-up to date with what we're doing</h3>
-        <form class="col-md-8 col-lg-6 col-xl-4 px-4">
-            <div class="row">
-                <div class="col-md-7 mb-3">
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address" aria-describedby="emailHelp">
+        <form class="col-md-9 px-4 justify-content-center was-validated">
+            <div class="row divForm">
+                <div class="col-md-5 mb-3">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address" aria-describedby="emailHelp" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
                 </div>
-                <div class="col-md-5 botoForm">
+                <div class="col-md-3 botoForm">
                     <button type="submit" class="btn btn-danger">Contact Us</button>
                 </div>
             </div>
           </form>
 
-          <div class="foot2">
-            <div class="d-flex">
+          <div class="row mt-5 foot2">
+            <div class="col-md-6 d-flex footerEl">
               <img src="../1/recursos/Imagenes_logo-bookmark(1).svg">
               <div>features</div>
               <div>pricing</div>
               <div>contact</div>
             </div>
-            <div>
+            <div class="col-md-6 footerNet">
                 <img src="../1/recursos/Imagenes_icon-facebook.svg">
                 <img src="../1/recursos/Imagenes_icon-twitter.svg">
             </div>
         </div>
-
+      </div>
     </footer>
 
     

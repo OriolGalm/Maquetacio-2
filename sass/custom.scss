@@ -152,8 +152,35 @@ header>div{
         button{
             width: 100%;
         }
+        .foot2{
+            display: flex;
+            flex-direction: column;
+            .footerEl{
+                display: flex;
+                flex-direction: column;
+                img{
+                    width: 12rem;
+                    height: 2rem;
+                    margin: auto;
+                }
+                div{
+                    margin: auto;
+                    font-size: 1.8rem;
+                    padding-top: 1.6rem;
+                }
+            }
+            .footerNet{
+                width:20%;
+                margin: auto;
+                img{
+                    margin: auto;
+                    height: 1.6rem;
+                }
+            }
+        }
     }
 }
+
 .segonaPart{
     h2{
         font-weight: bold;
@@ -214,7 +241,6 @@ header>div{
 }
 
 footer{
-    height: 340px;
     display: grid;
     justify-content: center;
     h6{
@@ -228,16 +254,51 @@ footer{
         font-size: 2.4rem;
         text-align: center;
     }
+    form{
+        height: 100px;
+    }
     .botoForm{
-        color: white;
+        button{
+            color: white;
+            font-weight: bold;
+        }
+        
     }
     .foot2{
-        background: rgba(10,10,60,1);
-        height: 80px;
+        background: rgba(30,30,50,1);
+        margin:0px;
+        padding:0px;
         display: flex;
         flex-direction: row;
         div{
             color:white;
+        }
+    }
+    .divForm{
+        display: flex;
+        justify-content: end;
+    }
+    .footerEl{
+        padding: 1.4rem;
+        img{
+            height: 1.5rem;
+        }
+        div{
+            text-transform: uppercase;
+            padding-left: 1.6rem;
+            padding-top: .2rem;
+            font-size: .8rem;
+            font-family: calibri;
+        }
+    }
+    .footerNet{
+        display: flex;
+        justify-content: end;
+        height: 2rem;
+        padding: 2rem;
+        img{
+            height: 1rem;
+            padding-right: 1.6rem;
         }
     }
 }
