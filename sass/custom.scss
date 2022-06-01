@@ -148,6 +148,11 @@ header>div{
             margin-top: 20px;
         }
     }
+    footer{
+        button{
+            width: 100%;
+        }
+    }
 }
 .segonaPart{
     h2{
@@ -187,7 +192,6 @@ header>div{
             margin: 20px 2% ;
             width:96%;
         }
-
     }
     img{
         width:35%;
@@ -203,5 +207,37 @@ header>div{
     img{
         float:right;
         margin-top:15px;
+    }
+}
+.botoInfo{
+    margin-bottom: 9rem;
+}
+
+footer{
+    height: 340px;
+    display: grid;
+    justify-content: center;
+    h6{
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: calibri;
+    }
+    h3{
+        color: white;
+        font-size: 2.4rem;
+        text-align: center;
+    }
+    .botoForm{
+        color: white;
+    }
+    .foot2{
+        background: rgba(10,10,60,1);
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        div{
+            color:white;
+        }
     }
 }

@@ -12644,6 +12644,9 @@ header > div p {
     width: 100%;
     margin-top: 20px;
   }
+  footer button {
+    width: 100%;
+  }
 }
 
 .segonaPart h2, .segonaPart .h2 {
@@ -12710,5 +12713,51 @@ header > div p {
 #accordion img {
   float: right;
   margin-top: 15px;
+}
+
+.botoInfo {
+  margin-bottom: 9rem;
+}
+
+footer {
+  height: 340px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer h6, footer .h6 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: calibri;
+}
+
+footer h3, footer .h3 {
+  color: white;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+footer .botoForm {
+  color: white;
+}
+
+footer .foot2 {
+  background: #0a0a3c;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .foot2 div {
+  color: white;
 }
 /*# sourceMappingURL=custom.css.map */
