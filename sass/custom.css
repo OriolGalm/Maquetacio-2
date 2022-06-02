@@ -1,3 +1,8 @@
+.cartes .carta:nth-child(1) a:hover, .cartes .carta:nth-child(2) a:hover, .cartes .carta:nth-child(3) a:hover {
+  background-color: white;
+  color: #5265E1;
+}
+
 /*!
  * Bootstrap v5.2.0-beta1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -12738,29 +12743,14 @@ header > div button:nth-child(2):hover {
   margin-bottom: 72px;
 }
 
-.cartes .carta:nth-child(1) a:hover {
-  background-color: white;
-  color: #5265E1;
-}
-
 .cartes .carta:nth-child(2) {
   margin-bottom: 36px;
   margin-top: 36px;
 }
 
-.cartes .carta:nth-child(2) a:hover {
-  background-color: white;
-  color: #5265E1;
-}
-
 .cartes .carta:nth-child(3) {
   margin-bottom: 0px;
   margin-top: 72px;
-}
-
-.cartes .carta:nth-child(3) a:hover {
-  background-color: white;
-  color: #5265E1;
 }
 
 .cartes .carta {
