@@ -337,6 +337,12 @@ header>div{
             border-top: 0px;
         }
     }
+    #headingOne:hover, #headingTwo:hover, #headingThree:hover, #headingFour:hover{
+        cursor: pointer;
+        button{
+            color: $danger;
+            }
+        }
     button{
         text-decoration: none;
         color: black;

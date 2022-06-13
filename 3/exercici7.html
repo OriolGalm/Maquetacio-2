@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="../css/custom.css" rel="stylesheet">
+    <link href="../sass/custom.css" rel="stylesheet">
 </head>
 <body>
 
@@ -46,6 +46,23 @@
         <p>Our aim is to make it quick and easy for you to access your favorite websites. Your bookmarks sync
          between your devices so you can access them on the go.</p>
     </div>
+
+    <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+    </div> -->
 
     <div class="container col-md-7 mt-5">
         <ul class="nav nav-tabs justify-content-around" id="myTab" role="tablist">
@@ -124,9 +141,9 @@
     <div class="container col-md-8 col-lg-6 mt-5">
       <div id="accordion">
         <div class="card">
-          <div class="card-header bg-white" id="headingOne">
+          <div class="card-header bg-white" id="headingOne" onclick="toggle(0)">
             <h5 class="mb-0">
-              <button class="btn btn-link" onclick="toggle(0)" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 What is Bookmark?
               </button>
               <img src="../1/recursos/Imagenes_icon-arrow.svg">
@@ -140,9 +157,9 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-header bg-white" id="headingTwo">
+          <div class="card-header bg-white" id="headingTwo" onclick="toggle(1)">
             <h5 class="mb-0">
-              <button class="btn btn-link collapsed" onclick="toggle(1)" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 How can I request a new browser?
               </button>
               <img src="../1/recursos/Imagenes_icon-arrow.svg">
@@ -155,9 +172,9 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-header bg-white" id="headingThree">
+          <div class="card-header bg-white" id="headingThree" onclick="toggle(2)">
             <h5 class="mb-0">
-              <button class="btn btn-link collapsed" onclick="toggle(2)" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 Is there a mobile app?
               </button>
               <img src="../1/recursos/Imagenes_icon-arrow.svg">
@@ -170,9 +187,9 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-header bg-white" id="headingThree">
+          <div class="card-header bg-white" id="headingFour" onclick="toggle(3)">
             <h5 class="mb-0">
-              <button class="btn btn-link collapsed" onclick="toggle(3)" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 What about other Chrome browsers
               </button>
               <img src="../1/recursos/Imagenes_icon-arrow.svg">
@@ -195,8 +212,19 @@
       <div class="bg-primary row row-cols-1 cols-md-8">
         <h6 class="mt-5">35,000+ already joined</h6>
         <h3 class="">Stay-up to date with what we're doing</h3>
-        <form class="col-md-9 px-4 justify-content-center was-validated">
+        <form class="col-md-9 px-4 justify-content-center needs-validation">
             <div class="row divForm">
+
+              <!-- <div class="col-md-4 position-relative">
+                <label for="validationTooltipUsername" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                  <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                  <div class="invalid-tooltip">
+                    Please choose a unique and valid username.
+                  </div>
+                </div>
+              </div> -->
                 <div class="col-md-5 mb-3">
                     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address" aria-describedby="emailHelp" required>
                     <div class="valid-feedback">Valid.</div>

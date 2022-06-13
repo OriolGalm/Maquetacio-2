@@ -12584,44 +12584,38 @@ header > div button:nth-child(2):hover {
 }
 
 #fonsBlau {
-  position: relative;
-  top: -2600px;
-  left: 0rem;
   width: 28%;
-  height: 20rem;
+  height: 16rem;
+  margin-top: -250px;
   background: #5265E1;
   float: right;
   z-index: -1;
 }
 
 #fonsBlau #circle {
-  position: absolute;
-  top: 0px;
-  left: -42%;
-  width: 90%;
-  height: 20rem;
+  margin-left: -40%;
+  float: left;
+  width: 80%;
+  height: 16rem;
   background: #5265E1;
   z-index: -1;
   border-radius: 50%;
 }
 
 #fonsBlau2 {
-  position: relative;
-  top: -1760px;
-  left: 0rem;
   width: 32%;
-  height: 20rem;
+  height: 16rem;
+  margin-top: -250px;
   float: left;
   background: #5265E1;
   z-index: -1;
 }
 
 #fonsBlau2 #circle2 {
-  position: absolute;
-  top: 0px;
-  left: 52%;
+  margin-right: -42%;
+  float: right;
   width: 90%;
-  height: 20rem;
+  height: 16rem;
   background: #5265E1;
   z-index: -1;
   border-radius: 50%;
@@ -12629,42 +12623,20 @@ header > div button:nth-child(2):hover {
 
 @media (max-width: 768px) {
   #fonsBlau {
-    position: relative;
-    top: -3920px;
-    left: 0rem;
+    margin-top: -550px;
     width: 60%;
-    height: 16rem;
-    background: #5265E1;
-    z-index: -1;
   }
   #fonsBlau #circle {
-    position: absolute;
-    top: 0px;
-    left: -28%;
+    margin-left: -30%;
     width: 60%;
-    height: 16rem;
-    background: #5265E1;
-    z-index: -1;
-    border-radius: 50%;
   }
   #fonsBlau2 {
-    position: relative;
-    top: -3040px;
-    left: 0rem;
+    margin-top: -500px;
     width: 60%;
-    height: 16rem;
-    background: #5265E1;
-    z-index: -1;
   }
   #fonsBlau2 #circle2 {
-    position: absolute;
-    top: 0px;
-    left: 68%;
+    margin-right: -28%;
     width: 60%;
-    height: 16rem;
-    background: #5265E1;
-    z-index: -1;
-    border-radius: 50%;
   }
 }
 
@@ -12683,7 +12655,7 @@ header > div button:nth-child(2):hover {
 
 @media (max-width: 768px) {
   .features h2, .features .h2, .extension h2, .extension .h2, .faqs h2, .faqs .h2 {
-    margin-top: 0rem;
+    margin-top: 4rem;
   }
 }
 
@@ -12883,6 +12855,14 @@ header > div button:nth-child(2):hover {
   }
 }
 
+#accordion #headingOne:hover, #accordion #headingTwo:hover, #accordion #headingThree:hover, #accordion #headingFour:hover {
+  cursor: pointer;
+}
+
+#accordion #headingOne:hover button, #accordion #headingTwo:hover button, #accordion #headingThree:hover button, #accordion #headingFour:hover button {
+  color: #FA5959;
+}
+
 #accordion button {
   text-decoration: none;
   color: black;
@@ -12903,7 +12883,6 @@ header > div button:nth-child(2):hover {
 }
 
 footer {
-  margin-top: -300px;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
