@@ -12840,42 +12840,37 @@ header > div button:nth-child(2):hover {
   margin: 30px auto;
 }
 
-#accordion .card {
+#accordionExample .card {
   border: 0px;
 }
 
-#accordion #headingOne {
+#accordionExample #headingOne {
   border-top: 1px solid #dee2e6;
   border-radius: 0rem;
 }
 
 @media (max-width: 768px) {
-  #accordion #headingOne {
+  #accordionExample #headingOne {
     border-top: 0px;
   }
 }
 
-#accordion #headingOne:hover, #accordion #headingTwo:hover, #accordion #headingThree:hover, #accordion #headingFour:hover {
+#accordionExample #headingOne:hover, #accordionExample #headingTwo:hover, #accordionExample #headingThree:hover, #accordionExample #headingFour:hover {
   cursor: pointer;
 }
 
-#accordion #headingOne:hover button, #accordion #headingTwo:hover button, #accordion #headingThree:hover button, #accordion #headingFour:hover button {
+#accordionExample #headingOne:hover button, #accordionExample #headingTwo:hover button, #accordionExample #headingThree:hover button, #accordionExample #headingFour:hover button {
   color: #FA5959;
 }
 
-#accordion button {
+#accordionExample button {
   text-decoration: none;
   color: black;
   font-size: 1.3rem;
 }
 
-#accordion button:hover {
+#accordionExample button:hover {
   color: #FA5959;
-}
-
-#accordion img {
-  float: right;
-  margin-top: 15px;
 }
 
 .botoInfo {

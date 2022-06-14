@@ -326,7 +326,7 @@ header>div{
         margin: 30px auto;
     }
 }
-#accordion{
+#accordionExample{
     .card{
         border: 0px;
     }
@@ -350,10 +350,6 @@ header>div{
     }
     button:hover{
         color: $danger;
-    }
-    img{
-        float:right;
-        margin-top:15px;
     }
 }
 .botoInfo{
