@@ -50,13 +50,13 @@
     <div class="container col-md-7 mt-5">
         <ul class="nav nav-tabs justify-content-around" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Simple Bookmarking</button>
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true" onclick="recuperarFons()">Simple Bookmarking</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Speedy Searching</button>
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" onclick="treureFons()">Speedy Searching</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Easy Sharing</button>
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false" onclick="treureFons()">Easy Sharing</button>
             </li>
         </ul>
     </div>   
@@ -76,11 +76,11 @@
             </div>
           </div>
         
-          <div class="tab-pane fade mt-5" id="profile" role="tabpanel" aria-labelledby="profile-tab">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          <div class="container tab-pane fade mt-5 col-md-10" id="profile" role="tabpanel" aria-labelledby="profile-tab">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
              aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
               consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
                tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
-          <div class="tab-pane fade mt-5" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="container tab-pane fade mt-5 col-md-10" id="contact" role="tabpanel" aria-labelledby="contact-tab">
             But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the
              great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue
               pleasure rationally encounter consequences that are extremely painful.
@@ -231,6 +231,12 @@
             }else{
                 canvi.style.left = "0px";
             }
+        }
+        function recuperarFons(){
+          document.getElementById("fonsBlau2").style.display = "block";
+        }
+        function treureFons(){
+          document.getElementById("fonsBlau2").style.display = "none";
         }
     </script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
